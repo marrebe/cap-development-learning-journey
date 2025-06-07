@@ -29,3 +29,7 @@ entity Authors {
         dateOfBirth : Date;
         dateOfDeath : Date;
 }
+
+entity Foo {
+    key id   : UUID;
+}
