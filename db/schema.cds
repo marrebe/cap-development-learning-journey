@@ -12,6 +12,7 @@ using {
 entity Books : cuid, managed {
     title       : localized String(255) @mandatory;
     author      : Association to Authors  @mandatory  @assert.target;
+    publisher   : Association to Publishers @assert.target;
     genre       : Genre                 @assert.range: true;
     publCountry : Country;
     stock       : NoOfBooks default 0;
@@ -46,10 +47,21 @@ entity Epochs : CodeList {
 }
 
 
+entity Publishers : cuid, managed {
+    name        : String(100) @mandatory;
+    countryCode : String(3);
+    books       : Association to many Books
+                    on books.publisher = $self;
+}
+
 annotate Books with {
     modifiedAt @odata.etag
 }
 
 annotate Authors with {
+    modifiedAt @odata.etag
+}
+
+annotate Publishers with {
     modifiedAt @odata.etag
 }
