@@ -31,4 +31,9 @@ service CatalogService @(path: '/cat') {
         stock : db.Books:stock
     };
 
+
+    action bla(quantity : Integer) returns {
+        value : Integer
+    };
+
 }

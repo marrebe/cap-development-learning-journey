@@ -39,3 +39,13 @@ Content-Type: application/json
   "book": "{{bookID}}",
   "quantity": 0
 }
+
+
+### ------------------------------------------------------------------------
+# Call the submitOrder action with a quantity of 0 -> error
+POST {{baseUrl}}/cat/bla
+Content-Type: application/json
+
+{
+  "quantity": 1
+}
