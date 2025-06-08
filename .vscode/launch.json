@@ -10,6 +10,9 @@
       "type": "node",
       "cwd": "${workspaceFolder}",
       "runtimeExecutable": "cds",
+      "env": {
+        "PATH": "/Users/Markus.Reinsch/.nvm/versions/node/v20.15.1/bin:${env:PATH}"
+      },
       "args": [
         "serve",
         "--with-mocks",
