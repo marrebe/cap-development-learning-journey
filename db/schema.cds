@@ -48,10 +48,10 @@ entity Epochs : CodeList {
 
 
 entity Publishers : cuid, managed {
-    name        : String(100) @mandatory;
-    countryCode : String(3);
-    books       : Association to many Books
-                    on books.publisher = $self;
+    name    : String(100) @mandatory;
+    country : Country;
+    books   : Association to many Books
+               on books.publisher = $self;
 }
 
 annotate Books with {

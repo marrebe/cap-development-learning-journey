@@ -1,4 +1,4 @@
-ID,name,countryCode,createdAt,createdBy,modifiedAt,modifiedBy
+ID,name,country_code,createdAt,createdBy,modifiedAt,modifiedBy
 d5787e94-0c4d-4f27-8920-bb3bd346c8e1,Penguin Random House,US,2024-01-01T00:00:00Z,admin,2024-01-01T00:00:00Z,admin
 a1b2c3d4-e5f6-4a5b-8c7d-9e0f1a2b3c4d,HarperCollins,GB,2024-01-01T00:00:00Z,admin,2024-01-01T00:00:00Z,admin
 f4e3d2c1-b9a8-4f7e-6b5c-4d3e2f1a0b9c,Simon & Schuster,US,2024-01-01T00:00:00Z,admin,2024-01-01T00:00:00Z,admin
