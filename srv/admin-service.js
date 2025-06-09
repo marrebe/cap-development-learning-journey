@@ -1,4 +1,4 @@
-const cds = require('@sap/cds');
+import cds from '@sap/cds';
 
 class AdminService extends cds.ApplicationService {
 
@@ -28,4 +28,4 @@ class AdminService extends cds.ApplicationService {
 
 }
 
-module.exports = AdminService;
+export default AdminService;
