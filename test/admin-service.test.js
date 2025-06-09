@@ -1,15 +1,9 @@
-import { expect } from 'chai';
-import { describe, it, beforeEach, before } from 'mocha';
+const { expect } = require('chai');
+const { describe, it, beforeEach } = require('mocha');
+const AdminService = require('../srv/admin-service.js');
 
 describe('AdminService Tests', () => {
-    let AdminService;
     let adminService;
-
-    before(async () => {
-        // Dynamically import the AdminService (CommonJS module)
-        const module = await import('../srv/admin-service.js');
-        AdminService = module.default;
-    });
 
     beforeEach(() => {
         adminService = new AdminService();

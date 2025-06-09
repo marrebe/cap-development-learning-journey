@@ -8,10 +8,9 @@
   },
   "devDependencies": {
     "@cap-js/sqlite": "^2",
-    "chai": "^5.2.0",
+    "chai": "^4.3.7",
     "mocha": "^11.6.0"
   },
-  "type": "module",
   "scripts": {
       "start": "cds-serve",
       "test": "mocha test/**/*.test.js"

@@ -1,4 +1,4 @@
-import cds from '@sap/cds';
+const cds = require('@sap/cds');
 
 class CatalogService extends cds.ApplicationService {
 
@@ -49,4 +49,4 @@ class CatalogService extends cds.ApplicationService {
 
 }
 
-export default CatalogService;
+module.exports = CatalogService;
