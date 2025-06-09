@@ -1,9 +1,15 @@
-const { expect } = require('chai');
-const { describe, it, beforeEach } = require('mocha');
+const { describe, it, beforeEach, before } = require('mocha');
 const AdminService = require('../srv/admin-service.js');
 
 describe('AdminService Tests', () => {
+    let expect;
     let adminService;
+
+    before(async () => {
+        // Dynamically import chai (ES module) in CommonJS environment
+        const chai = await import('chai');
+        expect = chai.expect;
+    });
 
     beforeEach(() => {
         adminService = new AdminService();
